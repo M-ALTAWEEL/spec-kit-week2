@@ -9,21 +9,21 @@
 ## How I ran it
 
 I ran each `/speckit-*` skill in order and reviewed every artifact before starting the next
-stage. Each stage has its own commit, so `git log` shows the full loop.
+stage. The order of the stages and what each one produced:
 
-| Stage | Commit message starts with | Output |
-|---|---|---|
-| init | `chore: initialize Spec Kit project` | `.specify/`, `.github/skills/` |
-| constitution | `docs: ratify constitution v1.0.0` | `.specify/memory/constitution.md` |
-| specify | `spec: add quote-of-the-day specification (v1)` | `spec.md`, `checklists/requirements.md` |
-| plan | `plan: add implementation plan…` | `plan.md`, `research.md`, `data-model.md`, `contracts/`, `quickstart.md` |
-| tasks | `tasks: generate task list (T001-T017)` | `tasks.md` |
-| implement | `feat: implement quote-of-the-day page (T001-T017)` | page + tests |
-| converge 1 | (no commit: converged, so `tasks.md` stayed unchanged) | none |
-| **refine** | `spec+plan: refine FR-002…` | spec v1.1, plan, research R6, contracts |
-| converge 2 | `tasks: converge pass 2 appends Phase 7 (T018-T021)` | 4 new tasks |
-| implement | `feat: New quote never repeats the current quote (T018-T021)` | fix + tests |
-| converge 3 | (no commit: converged) | none |
+| Stage | Output |
+|---|---|
+| init | `.specify/`, `.github/skills/` |
+| constitution | `.specify/memory/constitution.md` |
+| specify | `spec.md`, `checklists/requirements.md` |
+| plan | `plan.md`, `research.md`, `data-model.md`, `contracts/`, `quickstart.md` |
+| tasks | `tasks.md` (T001–T017) |
+| implement | page + tests |
+| converge 1 | ✅ Converged, `tasks.md` unchanged |
+| **refine** | spec v1.1, plan, research R6, contracts |
+| converge 2 | Phase 7 appended to `tasks.md` (T018–T021) |
+| implement | fix + tests |
+| converge 3 | ✅ Converged, `tasks.md` unchanged |
 
 ## Prompts I gave each skill
 
