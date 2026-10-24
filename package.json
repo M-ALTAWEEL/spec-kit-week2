@@ -1,0 +1,11 @@
+{
+  "name": "spec-kit-week2",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Quote of the Day page built spec-first with GitHub Spec Kit",
+  "scripts": {
+    "test": "node --test \"tests/unit/*.test.mjs\"",
+    "test:e2e": "node --test --test-concurrency=1 \"tests/e2e/*.test.mjs\""
+  }
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quote of the Day</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Quote of the Day</h1>
+    <figure id="quote" aria-live="polite">
+      <blockquote><p id="quote-text"></p></blockquote>
+      <figcaption>— <span id="quote-author"></span></figcaption>
+    </figure>
+    <div class="actions">
+      <button id="new-quote" type="button">New quote</button>
+      <button id="favorite" type="button" aria-pressed="false">☆ Favorite</button>
+    </div>
+  </main>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
